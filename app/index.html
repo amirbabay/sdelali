@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/libs.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <title>Сделали</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content-wrapper">
+                <header class="header">
+                    <div class="header__topbar">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-9">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="#">
+                                                    <span class="breadcrumb-item__badge">1</span>
+                                                    <span class="breadcrumb-item__text">Search results</span>
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumb-item active">
+                                                <span class="breadcrumb-item__badge">2</span>
+                                                <span class="breadcrumb-item__text">Car options</span>
+                                            </li>
+                                            <li class="breadcrumb-item active" aria-current="page">
+                                                <span class="breadcrumb-item__badge">3</span>
+                                                <span class="breadcrumb-item__text">Checkout</span>
+                                            </li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <div class="col-3">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h1><i class="fas fa-search"></i> Results for <span class="title_orange">New-York</span></h1>
+                    </div>
+                    <div class="filter">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-selected="true">Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="manage-tab" data-toggle="tab" href="#manage" role="tab" aria-controls="manage" aria-selected="false">Manage</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane show active" id="book" role="tabpanel" aria-labelledby="book-tab">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="form-group">
+                                                <label>Location <span class="hint" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><i class="fas fa-info-circle"></i> Airport codes</span></label>
+                                                <div class="form-group-icon">
+                                                    <input type="text" name="" placeholder="Location" class="form-input form-input-icon">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <i class="fas fa-times-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-checkbox-control">
+                                                <input type="checkbox" id="checkbox1">
+                                                <label for="checkbox1">Return in different place</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-group">
+                                                <label>Pick-up</label>
+                                                <div class="form-group-icon">
+                                                    <input type="text" name="" placeholder="Pick-up" class="form-input form-input-icon">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <i class="fas fa-times-circle"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-group">
+                                                <label>Drop-off</label>
+                                                <div class="form-group-icon">
+                                                    <input type="text" name="" placeholder="Drop-off" class="form-input form-input-icon">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <i class="fas fa-times-circle"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="form-group">
+                                                <label>&nbsp;</label>
+                                                <button class="button button-primary" type="submit"><i class="fas fa-search"></i> Find car</button>
+                                            </div>
+                                            <div class="adv-filter-btn text-right">
+                                                <a data-toggle="collapse" href="#adv-filter" role="button" aria-expanded="false" aria-controls="adv-filter" class="collapsed">Advanced filter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="manage" role="tabpanel" aria-labelledby="manage-tab"></div>     
+                        </div>
+                    </div>
+                </header>
+                <div class="adv-filter collapse" id="adv-filter">
+                    <div class="adv-filter-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="color-dark d-inline-block align-middle">Popular tags</label>
+                                        <div class="tags tags-select align-middle clearfix">
+                                            <div class="tags__item"><a href="#" class="tags__link tags__link_dark">All</a></div>
+                                            <div class="tags__item"><a href="#" class="tags__link">Compact</a></div>
+                                            <div class="tags__item"><a href="#" class="tags__link">Luxory</a></div>
+                                            <div class="tags__item"><a href="#" class="tags__link tags__link_active">New-york</a></div>
+                                            <div class="tags__item"><a href="#" class="tags__link">Unlimited</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label class="color-dark">Price range</label> 
+                                        <div class="slider-range clearfix">
+                                            <div id="price-range"></div>
+                                            <div class="slider-range-min">0</div>
+                                            <div class="slider-range-max">1500</div>
+                                        </div>    
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="color-dark">Passengerss</label>  
+                                        <div class="slider-range clearfix">
+                                            <div id="passengers-range"></div>  
+                                            <div class="slider-range-min">0</div>
+                                            <div class="slider-range-max">500</div> 
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label class="color-dark">Car type</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox2">
+                                                <label for="checkbox2">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox3">
+                                                <label for="checkbox3">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox4">
+                                                <label for="checkbox4">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox5">
+                                                <label for="checkbox5">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox6">
+                                                <label for="checkbox6">Sedan</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox7">
+                                                <label for="checkbox7">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox8">
+                                                <label for="checkbox8">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox9">
+                                                <label for="checkbox9">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox10">
+                                                <label for="checkbox10">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox11">
+                                                <label for="checkbox11">Sedan</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <label class="color-dark">Category</label>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox12">
+                                        <label for="checkbox12">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox13">
+                                        <label for="checkbox13">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox14">
+                                        <label for="checkbox14">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox15">
+                                        <label for="checkbox15">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox16">
+                                        <label for="checkbox16">Sedan</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <label class="color-dark">Features</label>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox17">
+                                        <label for="checkbox17">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox18">
+                                        <label for="checkbox18">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox19">
+                                        <label for="checkbox19">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox20">
+                                        <label for="checkbox20">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox21">
+                                        <label for="checkbox21">Sedan</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <label class="color-dark">Special offers</label>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox22">
+                                        <label for="checkbox22">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox23">
+                                        <label for="checkbox23">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox24">
+                                        <label for="checkbox24">Sedan</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <br>
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="button button-primary button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-secondary button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-danger button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-success button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-info button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-light button-large" type="submit">Button</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="button button-primary" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-secondary" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-danger" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-success" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-info" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-light" type="submit">Button</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="button button-primary button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-secondary button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-danger button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-success button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-info button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-light button-small" type="submit">Button</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="button button-primary button-transparent button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-secondary button-transparent button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-danger button-transparent button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-success button-transparent button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-info button-transparent button-large" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-light button-transparent button-large" type="submit">Button</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="button button-primary button-transparent" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-secondary button-transparent" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-danger button-transparent" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-success button-transparent" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-info button-transparent" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-light button-transparent" type="submit">Button</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="button button-primary button-transparent button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-secondary button-transparent button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-danger button-transparent button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-success button-transparent button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-info button-transparent button-small" type="submit">Button</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-light button-transparent button-small" type="submit">Button</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, 
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer-top">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <div class="footer-logo">
+                                        <a href="#">
+                                            <img src="img/logo-footer.png">
+                                        </a>
+                                        <div class="copyright">
+                                            © 2019 <span>BestWebSoft</span> All Rights Reserved
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="footer-menu clearfix">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Cars</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li class="active"><a href="#">Blog</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Contacts</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <footer>
+                    <div class="footer-top">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-3">
+                                    1
+                                </div>
+                                <div class="col-3">
+                                    1
+                                </div>
+                                <div class="col-3">
+                                    1
+                                </div>
+                                <div class="col-3">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <div class="copyright">
+                                        © 2019 <span>BestWebSoft</span> All Rights Reserved
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="footer-social clearfix">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div class="slide-menu-wrapper">
+                <div class="slide-menu__logo">
+                    <a href="/"><img src="img/logo-text.png"></a>
+                </div>
+                <div class="slide-menu-scroll" id="scroll" data-simplebar>
+                    <ul class="slide-menu">
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Cars</span>
+                                <span class="slide-menu__badge">2</span>
+                                <i class="slide-menu__arrow fa fa-plus"></i>
+                            </a>
+                            <ul class="slide-menu slide-menu_level2">
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Rent</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Dropoff</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Most popular</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Features</span>
+                                <i class="slide-menu__arrow fa fa-plus"></i>
+                            </a>
+                            <ul class="slide-menu slide-menu_level2">
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Rent</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Dropoff</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Most popular</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Pricing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">About us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Contacts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Help</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">User profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Shortcodes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">404</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <aside class="side-wrapper">
+                <div class="side-logo">
+                    <a href="/"><img src="img/logo.png"></a>
+                </div>
+                <ul class="side-menu">
+                    <li class="side-menu__item">
+                        <a href=".slide-menu-wrapper" data-toggle="showmenu" class="side-menu__link" ><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li class="side-menu__item">
+                        <a href="#" class="side-menu__link"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,966 @@
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans600semibold.woff2") format("woff2"), url("../webfonts/Sinkinsans600semibold.woff") format("woff"), url("../webfonts/Sinkinsans600semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans500medium.woff2") format("woff2"), url("../webfonts/Sinkinsans500medium.woff") format("woff"), url("../webfonts/Sinkinsans500medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans500mediumitalic.woff2") format("woff2"), url("../webfonts/Sinkinsans500mediumitalic.woff") format("woff"), url("../webfonts/Sinkinsans500mediumitalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans400italic.woff2") format("woff2"), url("../webfonts/Sinkinsans400italic.woff") format("woff"), url("../webfonts/Sinkinsans400italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans100thin.woff2") format("woff2"), url("../webfonts/Sinkinsans100thin.woff") format("woff"), url("../webfonts/Sinkinsans100thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans200xlightitalic.woff2") format("woff2"), url("../webfonts/Sinkinsans200xlightitalic.woff") format("woff"), url("../webfonts/Sinkinsans200xlightitalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans200xlight.woff2") format("woff2"), url("../webfonts/Sinkinsans200xlight.woff") format("woff"), url("../webfonts/Sinkinsans200xlight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans300light.woff2") format("woff2"), url("../webfonts/Sinkinsans300light.woff") format("woff"), url("../webfonts/Sinkinsans300light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans400regular.woff2") format("woff2"), url("../webfonts/Sinkinsans400regular.woff") format("woff"), url("../webfonts/Sinkinsans400regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans900xblack.woff2") format("woff2"), url("../webfonts/Sinkinsans900xblack.woff") format("woff"), url("../webfonts/Sinkinsans900xblack.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans600semibolditalic.woff2") format("woff2"), url("../webfonts/Sinkinsans600semibolditalic.woff") format("woff"), url("../webfonts/Sinkinsans600semibolditalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans700bolditalic.woff2") format("woff2"), url("../webfonts/Sinkinsans700bolditalic.woff") format("woff"), url("../webfonts/Sinkinsans700bolditalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans100thinitalic.woff2") format("woff2"), url("../webfonts/Sinkinsans100thinitalic.woff") format("woff"), url("../webfonts/Sinkinsans100thinitalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans700bold.woff2") format("woff2"), url("../webfonts/Sinkinsans700bold.woff") format("woff"), url("../webfonts/Sinkinsans700bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans900xblackitalic.woff2") format("woff2"), url("../webfonts/Sinkinsans900xblackitalic.woff") format("woff"), url("../webfonts/Sinkinsans900xblackitalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans800black.woff2") format("woff2"), url("../webfonts/Sinkinsans800black.woff") format("woff"), url("../webfonts/Sinkinsans800black.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans300lightitalic.woff2") format("woff2"), url("../webfonts/Sinkinsans300lightitalic.woff") format("woff"), url("../webfonts/Sinkinsans300lightitalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sinkin Sans";
+    src: url("../webfonts/Sinkinsans800blackitalic.woff2") format("woff2"), url("../webfonts/Sinkinsans800blackitalic.woff") format("woff"), url("../webfonts/Sinkinsans800blackitalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+$color1: #111e24;
+$color2: #e65e0d;
+$light-blue: #829199;
+$medium-blue: #1f2a30;
+$blue: #2b363d;
+$side-menu-text: #4e5d66;
+$side-submenu-bg: #1c262b;
+$scroll: #4e5d66;
+$headeroverlaycolor: #243138;
+$tabstextcolor: #98a9b2;
+$inputtextcolor: #435159;
+$inputbordercolor: #36454c;
+$inputfocuscolor: #b4bdc2;
+$inputfocustextcolor: #32434c;
+$buttonsecondary: #4e5d66;
+$buttondanger: #ff6666;
+$buttonsuccess: #66cc66;
+$buttoninfo: #47bbed;
+$buttonlight: #dfe3e5;
+$inputlightbordercolor: #ebf0f2;
+$checkboxbgcolor: #1f2a30;
+$checkboxbordercolor: #36454c;
+$checkboxactivebordercolor: #829199;
+$advfilterbgcolor: #dfe3e5;
+$checkboxslidebgcolor: #f5f8fa;
+$checkboxslidedotcolor: #98a9b2;
+$checkboxslidebgactivecolor: #4e5d66;
+$tagsitembg: #98a9b2;
+$tagsitembgactive: #e65e0d;
+$tagsitembg2: #36454c;
+$footermenubg: #1f2a30;
+$footermenutext: #98a9b2;
+$footermenuitemactive: #e65e0d;
+$footerbg: #28353d;
+$copyrightcolor: #607480;
+$copyrightboldcolor: #98a9b2;
+$footersocialcolor: #909da4;
+
+$slide-menu: 300px;
+$side-wrapper: 78px;
+$side-menu-logo: 78px;
+*{
+	transition: all 0.3s ease-in-out;
+}
+body{
+	font-family: 'Sinkin Sans';
+}
+/* SIDE MENU */
+.side-wrapper{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 12;
+	background-color: $color1;
+	width: $side-wrapper;
+}
+.side-logo{
+	background-color: $color2;
+	height: 78px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.side-menu{
+	margin: 0;
+	list-style: none;
+	padding: 25px 0;
+}
+.side-menu__item{
+	margin-bottom: 25px;
+	position: relative;
+	padding: 0 25px;
+	overflow: hidden;
+}
+.side-menu__item:last-child{
+	margin-bottom: 0px;
+}
+.side-menu__link{
+	font-size: 30px;
+	color: $light-blue;
+	text-align: center;
+	display: block;
+	line-height: 50px;
+}
+.side-menu__link_active{
+	color: #fff;
+}
+.side-menu__link_active:after{
+	display: block;
+	content: " ";
+	position: absolute;
+	border: 15px solid transparent;
+	border-right: 15px solid $medium-blue;; 
+	right: 0px;
+	top: 11px;
+	z-index: 0;
+}
+.side-menu__link:hover{
+	color: $color2;
+}
+
+/* SLIDE MENU */
+.slide-menu-wrapper{
+	position: fixed;
+	top: 0;
+	left: -$slide-menu + $side-wrapper;
+	width: $slide-menu;
+	background: $medium-blue;
+	z-index: 10;
+	bottom: 0;
+	height: 100%;
+}
+.slide-menu-wrapper_hover{
+	left: 78px;
+}
+.slide-menu__logo{
+	background-color: $blue;
+	height: $side-menu-logo;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slide-menu{
+	padding: 25px 0;
+	list-style: none;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 13px;
+}
+.slide-menu_level2{
+	padding: 0;
+	display: none;
+	transition: unset;
+}
+.slide-menu__link{
+	padding: 16px 30px 16px 40px;
+	display: flex;
+	color: $side-menu-text;
+}
+.slide-menu_level2 .slide-menu__link{
+	padding-left: 60px;
+}
+.slide-menu__link_active{
+	color: #fff;
+}
+.slide-menu__link:hover{
+	color: #fff;
+	text-decoration: none;
+	background: lighten($medium-blue, 5%);
+}
+.slide-menu__link:hover .slide-menu__icon{
+	color: $color2;
+}
+.slide-menu__icon{
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+.slide-menu__badge{
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	width: 18px;
+	height: 18px;
+	background: $color2;
+	color: #fff;
+	font-size: 10px;
+	border-radius: 100%;
+	justify-content: center;
+}
+.slide-menu__text{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+.slide-menu__arrow{
+	display: flex;
+	align-items: center;
+}
+
+/* CONTENT */
+.content-wrapper{
+	padding-left: $side-wrapper;
+}
+.content-wrapper_side-menu_open{
+	padding-left: $slide-menu + $side-wrapper;
+}
+
+/* HEADER */
+.header{
+	background: url('../img/header-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.header:after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	content: " ";
+	background: rgba($headeroverlaycolor, 0.85);
+}
+.header__topbar{
+	z-index: 1;
+	position: relative;
+	height: 78px;
+	align-items: center;
+	display: flex;
+}
+
+/* BREADCRUMBS */
+.breadcrumb{
+	background: transparent;
+	border-radius: 0;
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.breadcrumb-item + .breadcrumb-item{
+	padding-left: 0;
+}
+.breadcrumb-item + .breadcrumb-item:before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f054";
+	padding: 0 40px;
+	font-size: 16px;
+	color: inherit;
+}
+.breadcrumb-item{
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+.breadcrumb-item a{
+	color: inherit;
+	display: flex;
+	align-items: center;
+}
+.breadcrumb-item a:hover{
+	text-decoration: none;
+}
+.breadcrumb-item.active{
+	color: #fff;
+	opacity: 0.2;
+}
+.breadcrumb-item__badge{
+    display: flex;
+	align-items: center;
+	margin-right: 10px;
+	width: 28px;
+	height: 28px;
+	background: $color2;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 100%;
+	justify-content: center;
+}
+.breadcrumb-item.active .breadcrumb-item__badge{
+	background: $color1;
+}
+.breadcrumb-item__text{
+	display: flex;
+	flex-grow: 1;
+}
+
+/* TITLE */
+.title{
+	position: relative;
+	z-index: 1;
+	justify-content: center;
+	display: flex;
+}
+.title h1,
+.title .h1{
+	font-size: 45px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin: 0;
+	padding: 100px 0;
+}
+.title_orange{
+	color: $color2;
+}
+
+/* TABS */
+.tab-content > .tab-pane{
+	background: rgba($color1, 0.8);
+	padding: 40px 25px 5px;
+}
+.nav-tabs .nav-link{
+	font-weight: 800;
+	font-size: 13px;
+	text-transform: uppercase;
+	background: $medium-blue;
+	border-radius: 0;
+	color: $side-menu-text;
+	padding: .9rem 1.95rem;
+}
+.nav-tabs .nav-link.active{
+	background: rgba($color1, 0.8);
+	border-color: transparent;
+	color: $tabstextcolor;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+	border-color: transparent;
+}
+.nav-tabs{
+	border-color: transparent;
+}
+
+/* FILTER */
+.filter{
+	position: relative;
+	z-index: 1;
+}
+
+/* ADVANCED FILTER */
+.adv-filter-btn a{
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 800;
+	color: $tabstextcolor;
+	position: relative;
+}
+.adv-filter-btn a:after{
+	display: block;
+	content: " ";
+	border: 15px solid transparent;
+	border-bottom: 15px solid $advfilterbgcolor;
+	position: absolute;
+	left: 50%;
+	margin-left: -16px;
+	top: 15px;
+	z-index: 0;
+}
+.adv-filter-btn a.collapsed:after{
+	display: none;
+}
+.adv-filter-btn a:hover{
+	text-decoration: none;
+}
+.adv-filter{
+	background: $advfilterbgcolor;
+}
+.adv-filter-wrapper{
+	padding: 50px 25px 20px;
+}
+
+/* FORMS */
+label{
+	color: $tabstextcolor;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: block;
+	font-size: 15px;
+}
+label.color-dark{
+	color: $inputfocustextcolor;
+}
+.form-input{
+	background: $medium-blue;
+	border: 3px solid $inputbordercolor;
+	border-radius: 5px;
+	height: 50px;
+	line-height: 50px;
+	padding: 8px 20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: $inputtextcolor;
+	width: 100%;
+}
+.form-input:focus{
+	border-color: $inputfocuscolor;
+	background: $inputfocuscolor;
+	color: $inputfocustextcolor;
+}
+.form-input:focus::placeholder{
+	opacity: 0;
+}
+.form-input::placeholder{
+  	color: $inputtextcolor;
+}
+.form-group-icon{
+	position: relative;
+}
+.form-group-icon .fas:not(.fa-times-circle){
+	left: 0px;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	color: $inputbordercolor;
+}
+.form-group-icon .fa-times-circle{
+	right: 0px;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	opacity: 0;
+	color: $inputbordercolor;
+	cursor: pointer;
+}
+.form-group-icon .form-input{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.form-group-icon .form-input:focus + .fas + .fas{
+	opacity: 1;
+}
+.button{
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	padding: 0 34px;
+	line-height: 44px;
+	border-radius: 5px;
+	border: none;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 14px;
+	white-space: nowrap;
+	color: #fff;
+}
+
+.button-primary{
+	background-color: $color2;
+	border: 3px solid $color2;
+	border-bottom-color: rgba(#1d1d1c, 0.25);
+}
+.button-primary:hover{
+	box-shadow: none;
+	background: transparent;
+	border: 3px solid $color2;
+	color: $color2;
+}
+.button-secondary{
+	background-color: $buttonsecondary;
+	border: 3px solid $buttonsecondary;
+	border-bottom-color: rgba(#1d1d1c, 0.25);
+}
+.button-secondary:hover{
+	box-shadow: none;
+	background: transparent;
+	border: 3px solid $buttonsecondary;
+	color: $buttonsecondary;
+}
+.button-success{
+	background-color: $buttonsuccess;
+	border: 3px solid $buttonsuccess;
+	border-bottom-color: rgba(#1d1d1c, 0.25);
+}
+.button-success:hover{
+	box-shadow: none;
+	background: transparent;
+	border: 3px solid $buttonsuccess;
+	color: $buttonsuccess;
+}
+.button-danger{
+	background-color: $buttondanger;
+	border: 3px solid $buttondanger;
+	border-bottom-color: rgba(#1d1d1c, 0.25);
+}
+.button-danger:hover{
+	box-shadow: none;
+	background: transparent;
+	border: 3px solid $buttondanger;
+	color: $buttondanger;
+}
+.button-info{
+	background-color: $buttoninfo;
+	border: 3px solid $buttoninfo;
+	border-bottom-color: rgba(#1d1d1c, 0.25);
+}
+.button-info:hover{
+	box-shadow: none;
+	background: transparent;
+	border: 3px solid $buttoninfo;
+	color: $buttoninfo;
+}
+.button-light{
+	background-color: $buttonlight;
+	border: 3px solid $buttonlight;
+	border-bottom-color: rgba(#1d1d1c, 0.25);
+}
+.button-light:hover{
+	box-shadow: none;
+	background: transparent;
+	border: 3px solid $buttonlight;
+	color: $buttonlight;
+}
+
+.button-transparent{
+	box-shadow: none;
+	background: transparent;
+}
+.button-primary.button-transparent{
+	border: 3px solid $color2;
+	background: transparent;
+	color: $color2;
+}
+.button-primary.button-transparent:hover{
+	border-color: $color2;
+	background: $color2;
+	color: #fff;
+}
+.button-secondary.button-transparent{
+	border: 3px solid $buttonsecondary;
+	background: transparent;
+	color: $buttonsecondary;
+}
+.button-secondary.button-transparent:hover{
+	border-color: $buttonsecondary;
+	background: $buttonsecondary;
+	color: #fff;
+}
+.button-success.button-transparent{
+	border: 3px solid $buttonsuccess;
+	background: transparent;
+	color: $buttonsuccess;
+}
+.button-success.button-transparent:hover{
+	border-color: $buttonsuccess;
+	background: $buttonsuccess;
+	color: #fff;
+}
+.button-danger.button-transparent{
+	border: 3px solid $buttondanger;
+	background: transparent;
+	color: $buttondanger;
+}
+.button-danger.button-transparent:hover{
+	border-color: $buttondanger;
+	background: $buttondanger;
+	color: #fff;
+}
+.button-info.button-transparent{
+	border: 3px solid $buttoninfo;
+	background: transparent;
+	color: $buttoninfo;
+}
+.button-info.button-transparent:hover{
+	border-color: $buttoninfo;
+	background: $buttoninfo;
+	color: #fff;
+}
+.button-light.button-transparent{
+	border: 3px solid $buttonlight;
+	background: transparent;
+	color: $buttonlight;
+}
+.button-light.button-transparent:hover{
+	border-color: $buttonlight;
+	background: $buttonlight;
+	color: #fff;
+}
+
+.button-small{
+	line-height: 40px;
+	padding: 0 24px;
+	font-size: 13px;
+}
+.button-large{
+	line-height: 60px;
+	font-size: 20px;
+}
+
+.form-checkbox-control input[type="checkbox"] {
+  	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+  	margin: 10px 0 0 7px;
+}
+.form-checkbox-control input[type="checkbox"] + label {
+  	position: relative;
+  	padding: 0 0 0 35px;
+  	cursor: pointer;
+  	margin-right: 20px;
+  	margin-bottom: 0;
+  	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-transform: none;
+	font-weight: 700;
+	display: inline-block;
+}
+.form-checkbox-control input[type="checkbox"] + label:before {
+  	content: '';
+  	position: absolute;
+  	top: 0px;
+  	left: 0;
+  	width: 25px;
+  	height: 25px;
+  	border: 2px solid $checkboxbordercolor;
+  	border-radius: 5px;
+  	background: $checkboxbgcolor;
+  	font-family: "Font Awesome 5 Free";
+  	font-size: 14px;
+  	text-align: center;
+}
+.form-checkbox-control input[type="checkbox"]:checked + label:before {
+	content: "\f00c";
+  	border-color: $checkboxactivebordercolor;
+}
+.form-checkbox-slide-control input[type="checkbox"] {
+  	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+  	margin: 10px 0 0 7px;
+}
+.form-checkbox-slide-control input[type="checkbox"] + label {
+  	position: relative;
+  	padding: 0 0 0 42px;
+  	cursor: pointer;
+  	margin-right: 20px;
+  	margin-bottom: 0;
+  	font-family: 'Sinkin Sans', sans-serif;
+	font-size: 12px;
+	text-transform: none;
+	font-weight: 800;
+	display: inline-block;
+}
+.form-checkbox-slide-control input[type="checkbox"] + label:before {
+  	content: '';
+  	position: absolute;
+  	top: -2px;
+  	left: 0;
+  	width: 32px;
+  	height: 20px;
+  	border-radius: 20px;
+  	background: $checkboxslidebgcolor;
+  	transition: all 0.3s ease-in-out;
+}
+.form-checkbox-slide-control input[type="checkbox"]:checked + label:before {
+  	background: $checkboxslidebgactivecolor;
+}
+.form-checkbox-slide-control input[type="checkbox"] + label:after {
+  	content: '';
+  	position: absolute;
+  	top: 1px;
+  	left: 3px;
+  	width: 14px;
+  	height: 14px;
+  	border-radius: 14px;
+  	background: $checkboxslidedotcolor;
+  	transition: all 0.3s ease-in-out;
+}
+.form-checkbox-slide-control input[type="checkbox"]:checked + label:after {
+  	left: 15px;
+  	width: 14px;
+  	height: 14px;
+  	border-radius: 14px;
+  	background: $checkboxslidebgcolor;
+}
+
+/* SLIDER RANGE */
+.slider-range{
+	padding: 15px 0;
+}
+.ui-widget.ui-widget-content{
+	background: #f5f8fa;
+	height: 10px;
+	border-radius: 5px;
+	position: relative;
+	margin: 10px 0;
+}
+.ui-slider-horizontal .ui-slider-range{
+	background: #4e5d66;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	display: block;
+	transition: none;
+	top: 0;
+}
+.ui-slider .ui-slider-handle{
+	background: #243138;
+	height: 20px;
+	width: 20px;
+	border-radius: 20px;
+	position: absolute;
+	z-index: 2;
+	margin-left: -10px;
+	top: -5px;
+	transition: none;
+}
+.slider-range-min, .slider-range-max, .ui-slider .ui-slider-handle:before{
+	color: $tabstextcolor;
+	font-weight: 800;
+	font-size: 12px;
+}
+.slider-range-min{
+	float: left;
+}
+.slider-range-max{
+	float: right;
+}
+.ui-slider .ui-slider-handle:before{
+	content: attr(data-value);
+	color: $buttonsecondary;
+	top: -100%;
+	position: absolute;
+	width: 50px;
+	left: 50%;
+	text-align: center;
+	margin-left: -25px;
+}
+
+/* TAGS */
+.tags{
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: .5rem;
+	margin-left: 2rem;
+}
+.tags__item{
+	float: left;
+	margin-right: 6px;
+}
+.tags__item:last-child{
+	margin-right: 0;
+}
+.tags__link{
+	color: #fff;
+	background: $tagsitembg;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: 800;
+	display: block;
+	padding: 0px 8px;
+	line-height: 26px;
+	height: 24px;
+}
+.tags__link_dark{
+	background: $tagsitembg2;
+}
+.tags__link:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.tags__link_active{
+	background: $tagsitembgactive;
+}
+
+/* HINTS */
+.hint{
+	font-size: 10px;
+	font-weight: 700;
+	color: $side-menu-text;
+	float: right;
+	line-height: 22.5px;
+}
+.hint .fas{
+	font-size: 14px;
+}
+
+/* FOOTER */
+.footer-top{
+	background: $footerbg;
+	border-top: 4px solid $footermenuitemactive;
+}
+.footer-bottom{
+	background: $footermenubg;
+	height: 100px;
+}
+.footer-menu{
+	margin: 0 auto;
+	list-style: none;
+	padding: 0;
+	font-size: 13.5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+.footer-menu li{
+	margin: 0 6px;
+	display: inline-block;
+}
+.footer-menu li a{
+	display: block;
+	line-height: 96px;
+	padding: 0 15px;
+	border-bottom: 4px solid transparent;
+	color: $footermenutext;
+	text-decoration: none;
+}
+.footer-menu li a:hover,
+.footer-menu li.active a{
+	color: $footermenuitemactive;
+	border-bottom-color: $footermenuitemactive;
+}
+.footer-logo{
+	padding: 145px 0 90px;
+}
+.footer-logo a{
+	display: block;
+	margin-bottom: 70px;
+}
+.copyright{
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	color: $copyrightcolor;
+}
+.copyright span{
+	font-weight: 700;
+	color: $copyrightboldcolor;
+}
+.footer-social{
+	text-align: right;
+	padding: 35px 0;
+}
+.footer-social ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.footer-social li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+.footer-social li:last-child{
+	margin-right: 0;
+}
+.footer-social li a{
+	font-size: 20px;
+	color: $footersocialcolor;
+	display: block;
+}
+
+/* SCROLL */
+.slide-menu-scroll{
+	height: calc(100% - 78px);
+}
+.simplebar-scrollbar{
+	transition: unset;
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before{
+	background: $scroll;
+	opacity: 1
+}
+.simplebar-track .simplebar-scrollbar.simplebar-visible:before{
+	opacity: 1;
+}
