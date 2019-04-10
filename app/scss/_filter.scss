@@ -1,0 +1,37 @@
+.filter{
+	position: relative;
+	z-index: 1;
+}
+.filter .button{
+	width: 100%;
+}
+.adv-filter-btn a{
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 800;
+	color: $tabstextcolor;
+	position: relative;
+}
+.adv-filter-btn a:after{
+	display: block;
+	content: " ";
+	border: 15px solid transparent;
+	border-bottom: 15px solid $advfilterbgcolor;
+	position: absolute;
+	left: 50%;
+	margin-left: -16px;
+	top: 15px;
+	z-index: 0;
+}
+.adv-filter-btn a.collapsed:after{
+	display: none;
+}
+.adv-filter-btn a:hover{
+	text-decoration: none;
+}
+.adv-filter{
+	background: $advfilterbgcolor;
+}
+.adv-filter-wrapper{
+	padding: 50px 25px 20px;
+}

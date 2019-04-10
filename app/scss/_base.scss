@@ -1,0 +1,30 @@
+*{
+	transition: all 0.3s ease-in-out;
+}
+body{
+	font-family: 'Sinkin Sans';
+}
+.content-wrapper{
+	padding-left: 78px;
+}
+.content-wrapper_side-menu_open{
+	padding-left: 378px;
+}
+.title{
+	position: relative;
+	z-index: 1;
+	justify-content: center;
+	display: flex;
+}
+.title h1,
+.title .h1{
+	font-size: 45px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin: 0;
+	padding: 100px 0;
+}
+.title_orange{
+	color: $color2;
+}

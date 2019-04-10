@@ -1,0 +1,24 @@
+.tab-content > .tab-pane{
+	background: rgba($color1, 0.8);
+	padding: 40px 25px 5px;
+}
+.nav-tabs .nav-link{
+	font-weight: 800;
+	font-size: 13px;
+	text-transform: uppercase;
+	background: $medium-blue;
+	border-radius: 0;
+	color: $side-menu-text;
+	padding: .9rem 1.95rem;
+}
+.nav-tabs .nav-link.active{
+	background: rgba($color1, 0.8);
+	border-color: transparent;
+	color: $tabstextcolor;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+	border-color: transparent;
+}
+.nav-tabs{
+	border-color: transparent;
+}

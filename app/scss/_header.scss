@@ -1,0 +1,22 @@
+.header{
+	background: url('../img/header-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.header:after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	content: " ";
+	background: rgba($headeroverlaycolor, 0.85);
+}
+.header__topbar{
+	z-index: 1;
+	position: relative;
+	height: 78px;
+	align-items: center;
+	display: flex;
+}

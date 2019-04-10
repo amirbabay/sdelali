@@ -12,7 +12,7 @@ var gulp         = require('gulp'), // Подключаем Gulp
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
-	return gulp.src('app/sass/**/*.scss') // Берем источник
+	return gulp.src('app/scss/**/*.scss') // Берем источник
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
 		.pipe(cssnano())
@@ -46,7 +46,6 @@ gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([
 			'app/libs/css/bootstrap.min.css',
 			'app/libs/css/all.min.css',
-			'app/libs/css/sinkinsans.css',
 			'app/libs/css/simplebar.min.css'
 		]) // Выбираем файл для минификации
 		.pipe(concat('libs.min.css'))
@@ -56,7 +55,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'js-libs'], function() {
-	gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
+	gulp.watch('app/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
 	gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 });

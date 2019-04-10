@@ -1,0 +1,54 @@
+.breadcrumb{
+	background: transparent;
+	border-radius: 0;
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.breadcrumb-item + .breadcrumb-item{
+	padding-left: 0;
+}
+.breadcrumb-item + .breadcrumb-item:before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f054";
+	padding: 0 40px;
+	font-size: 16px;
+	color: inherit;
+}
+.breadcrumb-item{
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+.breadcrumb-item a{
+	color: inherit;
+	display: flex;
+	align-items: center;
+}
+.breadcrumb-item a:hover{
+	text-decoration: none;
+}
+.breadcrumb-item.active{
+	color: #fff;
+	opacity: 0.2;
+}
+.breadcrumb-item__badge{
+    display: flex;
+	align-items: center;
+	margin-right: 10px;
+	width: 28px;
+	height: 28px;
+	background: $color2;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 100%;
+	justify-content: center;
+}
+.breadcrumb-item.active .breadcrumb-item__badge{
+	background: $color1;
+}
+.breadcrumb-item__text{
+	display: flex;
+	flex-grow: 1;
+}

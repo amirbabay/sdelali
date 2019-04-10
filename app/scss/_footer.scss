@@ -1,0 +1,75 @@
+.footer-top{
+	background: $footerbg;
+	border-top: 4px solid $footermenuitemactive;
+}
+.footer-bottom{
+	background: $footermenubg;
+	height: 100px;
+}
+.footer-menu{
+	margin: 0 auto;
+	list-style: none;
+	padding: 0;
+	font-size: 13.5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+.footer-menu li{
+	margin: 0 6px;
+	display: inline-block;
+}
+.footer-menu li a{
+	display: block;
+	line-height: 96px;
+	padding: 0 15px;
+	border-bottom: 4px solid transparent;
+	color: $footermenutext;
+	text-decoration: none;
+}
+.footer-menu li a:hover,
+.footer-menu li.active a{
+	color: $footermenuitemactive;
+	border-bottom-color: $footermenuitemactive;
+}
+.footer-logo{
+	padding: 145px 0 90px;
+}
+.footer-logo a{
+	display: block;
+	margin-bottom: 70px;
+}
+.copyright{
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	color: $copyrightcolor;
+}
+.copyright span{
+	font-weight: 700;
+	color: $copyrightboldcolor;
+}
+.footer-social{
+	text-align: right;
+	padding: 35px 0;
+}
+.footer-social ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.footer-social li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+.footer-social li:last-child{
+	margin-right: 0;
+}
+.footer-social li a{
+	font-size: 20px;
+	color: $footersocialcolor;
+	display: block;
+}
+.footer-social li a:hover{
+	color: $color2;
+}

@@ -1,0 +1,144 @@
+.side-wrapper{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 12;
+	background-color: $color1;
+	width: 78px;
+}
+.side-logo{
+	background-color: $color2;
+	height: 78px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.side-menu{
+	margin: 0;
+	list-style: none;
+	padding: 25px 0;
+}
+.side-menu__item{
+	margin-bottom: 25px;
+	position: relative;
+	padding: 0 25px;
+	overflow: hidden;
+}
+.side-menu__item:last-child{
+	margin-bottom: 0px;
+}
+.side-menu__link{
+	font-size: 30px;
+	color: $light-blue;
+	text-align: center;
+	display: block;
+	line-height: 50px;
+}
+.side-menu__link_active{
+	color: #fff;
+}
+.side-menu__link_active:after{
+	display: block;
+	content: " ";
+	position: absolute;
+	border: 15px solid transparent;
+	border-right: 15px solid $medium-blue;
+	right: 0px;
+	top: 11px;
+	z-index: 0;
+}
+.side-menu__link:hover{
+	color: $color2;
+}
+.slide-menu-wrapper{
+	position: fixed;
+	top: 0;
+	left: -378px;
+	width: 300px;
+	background: $medium-blue;
+	z-index: 10;
+	bottom: 0;
+	height: 100%;
+}
+.slide-menu-wrapper_hover{
+	left: 78px;
+}
+.slide-menu__logo{
+	background-color: $blue;
+	height: 78px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slide-menu{
+	padding: 25px 0;
+	list-style: none;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 13px;
+}
+.slide-menu_level2{
+	padding: 0;
+	display: none;
+	transition: unset;
+}
+.slide-menu__link{
+	padding: 16px 30px 16px 40px;
+	display: flex;
+	color: $side-menu-text;
+}
+.slide-menu_level2 .slide-menu__link{
+	padding-left: 60px;
+}
+.slide-menu__link_active{
+	color: #fff;
+}
+.slide-menu__link:hover{
+	color: #fff;
+	text-decoration: none;
+	background: lighten($medium-blue, 5%);
+}
+.slide-menu__link:hover .slide-menu__icon{
+	color: $color2;
+}
+.slide-menu__icon{
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+.slide-menu__badge{
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	width: 18px;
+	height: 18px;
+	background: $color2;
+	color: #fff;
+	font-size: 10px;
+	border-radius: 100%;
+	justify-content: center;
+}
+.slide-menu__text{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+.slide-menu__arrow{
+	display: flex;
+	align-items: center;
+}
+.slide-menu-scroll{
+	height: calc(100% - 78px);
+}
+.simplebar-scrollbar{
+	transition: unset;
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before{
+	background: $scroll;
+	opacity: 1
+}
+.simplebar-track .simplebar-scrollbar.simplebar-visible:before{
+	opacity: 1;
+}
