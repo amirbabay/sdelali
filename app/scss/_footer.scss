@@ -73,3 +73,112 @@
 .footer-social li a:hover{
 	color: $color2;
 }
+.footer-top__wrapper{
+	padding: 90px 0 100px;
+}
+.footer-top__title{
+	font-size: 18px;
+	font-weight: 700;
+	color: $footermenutext;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+.footer-top__about-text{
+	font-family: "Lato";
+	font-size: 15px;
+	color: $footertext;
+}
+.footer-top__about-text p{
+	line-height: 25px;
+}
+.footer-top__menu{
+	font-size: 14px;
+	font-family: "Lato";
+	text-transform: capitalize;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.footer-top__menu li{
+	padding: 10px 0;
+	line-height: 20px;
+	border-bottom: 1px solid $footermenuitem;
+}
+.footer-top__menu li:first-child{
+	padding-top: 0;
+}
+.footer-top__menu li:last-child{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.footer-top__menu li a:before{
+	content: " ";
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: $footertext;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -4px;
+}
+.footer-top__menu li a{
+	padding-left: 30px;
+	color: $footertext;
+	display: block;
+	position: relative;
+}
+.footer-top__menu li a:hover{
+	color: $color2;
+	text-decoration: none;
+}
+.footer-top__menu li a:hover:before{
+	background: $color2;
+}
+.footer-top__news-item{
+	margin-bottom: 30px;
+}
+.footer-top__news-img{
+	float: left;
+	width: 75px;
+	height: 75px;
+	background: $footernewsimg;
+	text-align: center;
+	line-height: 80px;
+}
+.footer-top__news-item:hover .footer-top__news-img{
+	background: $footernewsimghover;
+}
+.footer-top__news-body{
+	margin-left: 100px;
+	font-family: "Lato";
+	color: $footertext;
+}
+.footer-top__small-title{
+	font-size: 15px;
+	font-weight: bold;
+	color: $footermenutext;
+	font-family: "Lato";
+}
+.footer-top__news-date{
+	font-size: 14px;
+	font-style: italic;
+	line-height: 15px;
+	line-height: 30px;
+}
+.footer-top__news-text{
+	font-size: 15px;
+}
+.footer-top__news-item:after{
+	content: " ";
+	clear: both;
+	display: block;
+}
+.footer-top__news-img .fas{
+	opacity: 0;
+	color: #fff;
+	font-size: 30px;
+}
+.footer-top__news-item:hover .footer-top__news-img .fas{
+	opacity: 1;
+}

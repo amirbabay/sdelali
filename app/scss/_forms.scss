@@ -13,7 +13,6 @@ label.color-dark{
 	border: 3px solid $inputbordercolor;
 	border-radius: 5px;
 	height: 50px;
-	line-height: 50px;
 	padding: 8px 20px;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
@@ -30,6 +29,14 @@ label.color-dark{
 }
 .form-input::placeholder{
   	color: $inputtextcolor;
+}
+.form-input-small{
+	height: 40px;
+	border-width: 2px;
+}
+.form-input-small:focus{
+	border-color: $color2;
+	background: $medium-blue;
 }
 .form-group-icon{
 	position: relative;
@@ -219,6 +226,9 @@ label.color-dark{
 	line-height: 60px;
 	font-size: 20px;
 }
+.button-fullwidth{
+	width: 100%;
+}
 
 .form-checkbox-control input[type="checkbox"] {
   	position: absolute;
@@ -400,4 +410,8 @@ label.color-dark{
 }
 .hint .fas{
 	font-size: 14px;
+}
+textarea{
+	min-height: 90px;
+	resize: none;
 }
