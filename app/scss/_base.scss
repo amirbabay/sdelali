@@ -1,5 +1,6 @@
 *{
 	transition: all 0.3s ease-in-out;
+	outline: none;
 }
 body{
 	font-family: 'Sinkin Sans';
@@ -9,6 +10,9 @@ body{
 }
 .content-wrapper_side-menu_open{
 	padding-left: 378px;
+}
+.main-content{
+	padding: 40px 0;
 }
 .title{
 	position: relative;

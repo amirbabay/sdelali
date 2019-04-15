@@ -35,7 +35,8 @@ gulp.task('js-libs', function() {
 			'app/libs/js/jquery-ui.min.js',
 			'app/libs/js/popper.min.js',
 			'app/libs/js/bootstrap.min.js',
-			'app/libs/js/simplebar.js'
+			'app/libs/js/simplebar.js',
+			'app/libs/js/owl.carousel.min.js'
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
@@ -46,7 +47,8 @@ gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([
 			'app/libs/css/bootstrap.min.css',
 			'app/libs/css/all.min.css',
-			'app/libs/css/simplebar.min.css'
+			'app/libs/css/simplebar.min.css',
+			'app/libs/css/owl.carousel.min.css'
 		]) // Выбираем файл для минификации
 		.pipe(concat('libs.min.css'))
 		.pipe(cssnano()) // Сжимаем

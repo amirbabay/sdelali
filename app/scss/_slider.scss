@@ -1,0 +1,71 @@
+.owl-carousel{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.owl-carousel .item{
+	height: 450px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.owl-carousel .owl-dots{
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	font-size: 0;
+	line-height: normal;
+	justify-content: center;
+	display: flex;
+}
+.owl-carousel button.owl-dot{
+	outline: none;
+}
+.owl-carousel button.owl-dot span{
+	width: 40px;
+	height: 7px;
+	background: $color1;
+	display: block;
+}
+.owl-carousel button.owl-dot.active span{
+	background: $color2;
+}
+.owl-carousel .owl-nav{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+}
+.owl-carousel .owl-nav button{
+	opacity: 0;
+}
+.owl-carousel .owl-nav button.owl-next{
+	right: -42px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+	left: -42px;
+}
+.owl-carousel:hover .owl-nav button{
+	opacity: 1;
+}
+.owl-carousel:hover .owl-nav button.owl-next{
+	right: 20px;
+}
+.owl-carousel:hover .owl-nav button.owl-prev{
+	left: 20px;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+	position: absolute;
+	font-size: 25px;
+	height: 42px;
+	width: 42px;
+	background: #fff;
+	border-radius: 50px;
+	color: $color1;
+	margin-top: -21px;
+	outline: none;
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover{
+	color: $color2;
+}

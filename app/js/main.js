@@ -97,4 +97,17 @@
     });
     slider.parent().find('.ui-slider-handle').eq(0).attr('data-value', slider.slider("values", 0));
     slider.parent().find('.ui-slider-handle').eq(1).attr('data-value', slider.slider("values", 1));
+
+    $('.owl-carousel').owlCarousel({
+    	autoplay: true,
+    	autoplayTimeout: 5000,
+    	autoplayHoverPause: true,
+	    loop: true,
+	    margin: 0,
+	    nav: true,
+	    dots: true,
+	    center: true,
+	    items: 1,
+	    navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+	})
 })(jQuery);
