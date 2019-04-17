@@ -1,0 +1,32 @@
+.content-wrapper{
+	background-color: #f2f7fa;
+}
+
+
+/* Plain text*/
+/* Headings */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {font-weight: 800;}
+/* End of Headings */
+
+/* Text colors */
+*[class*="_color666"]{color: #666;}
+*[class*="_color999"]{color: #999;}
+
+/* End of Text colors */
+
+.text {
+	font-family: Lato, sans-serif;
+	font-weight: 500;
+}
+/* End of Plain text */
