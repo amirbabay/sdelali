@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/libs.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/faq.css">
+
+        <title>Сделали - FAQ</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content-wrapper">
+                <header class="header">
+                    <div class="header__topbar">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-9">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="#">
+                                                    <span class="breadcrumb-item__badge">1</span>
+                                                    <span class="breadcrumb-item__text">Search results</span>
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumb-item active">
+                                                <span class="breadcrumb-item__badge">2</span>
+                                                <span class="breadcrumb-item__text">Car options</span>
+                                            </li>
+                                            <li class="breadcrumb-item active" aria-current="page">
+                                                <span class="breadcrumb-item__badge">3</span>
+                                                <span class="breadcrumb-item__text">Checkout</span>
+                                            </li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <div class="col-3">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h1><i class="fas fa-search"></i> Results for <span class="title_orange">New-York</span></h1>
+                    </div>
+                    <div class="filter">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-selected="true">Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="manage-tab" data-toggle="tab" href="#manage" role="tab" aria-controls="manage" aria-selected="false">Manage</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane show active" id="book" role="tabpanel" aria-labelledby="book-tab">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="form-group">
+                                                <label>Location <span class="hint" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><i class="fas fa-info-circle"></i> Airport codes</span></label>
+                                                <div class="form-group-icon">
+                                                    <input type="text" name="" placeholder="Location" class="form-input form-input-icon">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <i class="fas fa-times-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-checkbox-control">
+                                                <input type="checkbox" id="checkbox1">
+                                                <label for="checkbox1">Return in different place</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-group">
+                                                <label>Pick-up</label>
+                                                <div class="form-group-icon">
+                                                    <input type="text" name="" placeholder="Pick-up" class="form-input form-input-icon">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <i class="fas fa-times-circle"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="form-group">
+                                                <label>Drop-off</label>
+                                                <div class="form-group-icon">
+                                                    <input type="text" name="" placeholder="Drop-off" class="form-input form-input-icon">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <i class="fas fa-times-circle"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="form-group">
+                                                <label>&nbsp;</label>
+                                                <button class="button button-primary" type="submit"><i class="fas fa-search"></i> Find car</button>
+                                            </div>
+                                            <div class="adv-filter-btn text-right">
+                                                <a data-toggle="collapse" href="#adv-filter" role="button" aria-expanded="false" aria-controls="adv-filter" class="collapsed">Advanced filter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="manage" role="tabpanel" aria-labelledby="manage-tab"></div>     
+                        </div>
+                    </div>
+                </header>
+                <div class="adv-filter collapse" id="adv-filter">
+                    <div class="adv-filter-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="color-dark d-inline-block align-middle">Popular tags</label>
+                                        <div class="tags tags-select align-middle clearfix">
+                                            <div class="tags__item"><a href="#" class="tags__link tags__link_dark">All</a></div>
+                                            <div class="tags__item"><a href="#" class="tags__link">Compact</a></div>
+                                            <div class="tags__item"><a href="#" class="tags__link">Luxory</a></div>
+                                            <div class="tags__item"><a href="#" class="tags__link tags__link_active">New-york</a></div>
+                                            <div class="tags__item"><a href="#" class="tags__link">Unlimited</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label class="color-dark">Price range</label> 
+                                        <div class="slider-range clearfix">
+                                            <div id="price-range"></div>
+                                            <div class="slider-range-min">0</div>
+                                            <div class="slider-range-max">1500</div>
+                                        </div>    
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="color-dark">Passengerss</label>  
+                                        <div class="slider-range clearfix">
+                                            <div id="passengers-range"></div>  
+                                            <div class="slider-range-min">0</div>
+                                            <div class="slider-range-max">500</div> 
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label class="color-dark">Car type</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox2">
+                                                <label for="checkbox2">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox3">
+                                                <label for="checkbox3">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox4">
+                                                <label for="checkbox4">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox5">
+                                                <label for="checkbox5">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox6">
+                                                <label for="checkbox6">Sedan</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox7">
+                                                <label for="checkbox7">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox8">
+                                                <label for="checkbox8">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox9">
+                                                <label for="checkbox9">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox10">
+                                                <label for="checkbox10">Sedan</label>
+                                            </div>
+                                            <div class="form-group form-checkbox-slide-control">
+                                                <input type="checkbox" id="checkbox11">
+                                                <label for="checkbox11">Sedan</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <label class="color-dark">Category</label>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox12">
+                                        <label for="checkbox12">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox13">
+                                        <label for="checkbox13">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox14">
+                                        <label for="checkbox14">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox15">
+                                        <label for="checkbox15">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox16">
+                                        <label for="checkbox16">Sedan</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <label class="color-dark">Features</label>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox17">
+                                        <label for="checkbox17">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox18">
+                                        <label for="checkbox18">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox19">
+                                        <label for="checkbox19">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox20">
+                                        <label for="checkbox20">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox21">
+                                        <label for="checkbox21">Sedan</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <label class="color-dark">Special offers</label>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox22">
+                                        <label for="checkbox22">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox23">
+                                        <label for="checkbox23">Sedan</label>
+                                    </div>
+                                    <div class="form-group form-checkbox-slide-control">
+                                        <input type="checkbox" id="checkbox24">
+                                        <label for="checkbox24">Sedan</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main content -->
+                    <!-- Need help text -->
+                        <div class="container">
+                            <div class="contacts-text">
+                                <h3 class="h3_color666 mt-5">Need help?</h3>
+                                <p class="text-justify text text_color999">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                                </p>
+                            </div>
+                        </div>
+                    <!-- //Need help text -->
+                    <!-- FAQ -->
+                        <div class="container">
+                            <!-- FAQ items accordion -->
+                                <div class="accordion mt-4" id="accordion-faq-visible">
+                                    <!-- Guide to accordion (Based on Bootstrap 4.3.1 accordion) 
+                                        1. Collapsed content named by id="FaqContent[number]"
+                                        2. Any elements, that take a change by clicking accordeon`s element trigger with class="acc__trigger", marked with class="acc__content_[number]".
+                                    -->
+                                    <!-- FAQ item-1 shown-->
+                                        <div class="container acc mt-1">
+                                            <a class="row acc__trigger" type="button" data-toggle="collapse" href="#FaqContent1" data-target=".acc__content_01" aria-expanded="true" aria-controls="FaqContent1">
+                                                <div class="acc__content_01 acc__indicator collapse show d-flex justify-content-center align-items-center ">
+                                                    <i class="collapse acc__content_01 fa fa-plus fa-plus_grey"></i>
+                                                    <i class="collapse show acc__content_01 fa fa-minus fa-minus_white"></i>
+                                                </div>
+                                                <div class="acc__content_01 d-flex align-items-center flex-grow-1 pl-3 acc__heading">
+                                                    <h6 class="m-0">
+                                                        Nunc ut lectus at risus pulvinar faucibus id ac ligula?
+                                                    </h6>
+                                                </div>
+                                                
+                                            </a>
+                                            <div class="row collapse show acc__content_01" id="FaqContent1">
+                                                <p class="text-justify text text_color999">
+                                                    FAQItem-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                </p>
+                                                <ol class="ol_lato ol_color666">
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>      
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                                <p class="text-justify text">
+                                                    FAQItem-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                </p>
+                                    
+                                            </div>
+                                        </div>
+                                    <!-- //FAQ item-1 -->
+                                    <!-- FAQ item-2 hidden-->
+                                        <div class="container acc mt-1">
+                                            <a class="row acc__trigger" type="button" data-toggle="collapse" href="#FaqContent2" data-target=".acc__content_02" aria-expanded="false" aria-controls="FaqContent2">
+                                                <div class="acc__content_02 acc__indicator collapse d-flex justify-content-center align-items-center ">
+                                                    <i class="collapse show acc__content_02 fa fa-plus fa-plus_grey"></i>
+                                                    <i class="collapse acc__content_02 fa fa-minus fa-minus_white"></i>
+                                                </div>
+                                                <div class="acc__content_02 collapse show d-flex align-items-center flex-grow-1 pl-3 acc__heading">
+                                                    <h6 class="m-0">
+                                                        Nunc ut lectus at risus pulvinar faucibus id ac ligula?
+                                                    </h6>
+                                                </div>
+                                            </a>
+                                            <div class="row collapse acc__content_02" id="FaqContent2">
+                                                <p class="text-justify text">
+                                                    FAQItem-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                </p>
+                                                <ol class="ol_lato ol_color666">
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>      
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                                <p class="text-justify text">
+                                                    FAQItem-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                </p>
+                                    
+                                            </div>
+                                        </div>
+                                    <!-- //FAQ item-2 -->
+                                    <!-- FAQ item-3 hidden-->
+                                        <div class="container acc mt-1">
+                                           <a class="row acc__trigger" type="button" data-toggle="collapse" href="#FaqContent3" data-target=".acc__content_03" aria-expanded="false" aria-controls="FaqContent2">
+                                                <div class="acc__content_03 acc__indicator collapse d-flex justify-content-center align-items-center ">
+                                                    <i class="collapse show acc__content_03 fa fa-plus fa-plus_grey"></i>
+                                                    <i class="collapse acc__content_03 fa fa-minus fa-minus_white"></i>
+                                                </div>
+                                                <div class="acc__content_03 collapse show d-flex align-items-center flex-grow-1 pl-3 acc__heading">
+                                                    <h6 class="m-0">
+                                                        Nunc ut lectus at risus pulvinar faucibus id ac ligula?
+                                                    </h6>
+                                                </div>
+                                            </a>
+                                            <div class="row collapse acc__content_03" id="FaqContent3">
+                                                <p class="text-justify text">
+                                                    FAQItem-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                </p>
+                                                <ol class="ol_lato ol_color666">
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>      
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                                <p class="text-justify text">
+                                                    FAQItem-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    <!-- //FAQ item-3 -->
+                                    <!-- FAQ item-4 hidden-->
+                                        <div class="container acc mt-1">
+                                           <a class="row acc__trigger" type="button" data-toggle="collapse" href="#FaqContent4" data-target=".acc__content_04" aria-expanded="false" aria-controls="FaqContent2">
+                                                <div class="acc__content_04 acc__indicator collapse d-flex justify-content-center align-items-center ">
+                                                    <i class="collapse show acc__content_04 fa fa-plus fa-plus_grey"></i>
+                                                    <i class="collapse acc__content_04 fa fa-minus fa-minus_white"></i>
+                                                </div>
+                                                <div class="acc__content_04 collapse show d-flex align-items-center flex-grow-1 pl-3 acc__heading">
+                                                    <h6 class="m-0">
+                                                        Nunc ut lectus at risus pulvinar faucibus id ac ligula?
+                                                    </h6>
+                                                </div>
+                                            </a>
+                                            <div class="row collapse acc__content_04" id="FaqContent3">
+                                                <p class="text-justify text">
+                                                    FAQItem-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                </p>
+                                                <ol class="ol_lato ol_color666">
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>      
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="text-justify text text_color999 ml-2">
+                                                            FAQItem-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                                <p class="text-justify text">
+                                                    FAQItem-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod magnam. Rerum distinctio placeat enim amet sit atque quisquam quam voluptas? Sequi dignissimos illo placeat, ut cum corporis ipsam suscipit!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    <!-- //FAQ item-4 -->
+                                </div>
+                            <!-- //FAQ items accordion -->
+                            <!-- FAQ View All Button -->
+                                <div class="mt-5">
+                                    <button class="button button-secondary button_borders" role="button" href="#">View all</button>
+                                </div>
+                            <!-- //FAQ View All Button -->
+                        </div>
+                    <!-- //FAQ -->
+                    <!-- Last Forum Messages -->
+                        <div class="container">
+                            <h3 class="h3_color666 mt-4">Visit our support forum</h3>
+                            <!-- Forum message 1 -->
+                                <h5 class="h6_color666 mt-4">Lorem ipsum dolor</h5>
+                                <p class="text-justify text text_color999 mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+                                </p>
+                                <p class="text text_ago text_color666">1 min ago</p>
+                            <!-- //Forum message 1 -->
+                            <!-- Forum message 2 -->
+                                <h5 class="h6_color666 mt-4">Lorem ipsum dolor</h5>
+                                <p class="text-justify text text_color999 mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+                                </p>
+                                <p class="text text_ago text_color666">2 min ago</p>
+                            <!-- //Forum message 2 -->
+                            <!-- Forum message 3 -->
+                                <h5 class="h6_color666 mt-4">Lorem ipsum dolor</h5>
+                                <p class="text-justify text text_color999 mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+                                </p>
+                                <p class="text text_ago text_color666">3 min ago</p>
+                            <!-- //Forum message 3 -->
+                            <!-- Forum message 4 -->
+                                <h5 class="h6_color666 mt-4">Lorem ipsum dolor</h5>
+                                <p class="text-justify text text_color999 mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+                                </p>
+                                <p class="text text_ago text_color666">4 min ago</p>
+                            <!-- //Forum message 4 -->
+                            <!-- Forum message 5 -->
+                                <h5 class="h6_color666 mt-4">Lorem ipsum dolor</h5>
+                                <p class="text-justify text text_color999 mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+                                </p>
+                                <p class="text text_ago text_color666">5 min ago</p>
+                            <!-- //Forum message 5 -->
+                            <!-- FAQ View All Button -->
+                                <div class="mt-5">
+                                    <button class="button button-secondary button_borders" role="button" href="#">To forum</button>
+                                </div>
+                            <!-- //FAQ View All Button -->
+                        </div>
+                    <!-- //Last Forum Messages -->
+                    <!-- Send us a message -->
+                        <div class="container">
+                            <h3 class="h3_color666">Send us a message</h3>
+                            <p class="text-justify text text_color999">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed accusamus, eveniet asperiores cupiditate non nemo ut perferendis velit voluptatem veniam temporibus sequi blanditiis iste fugit quae nulla numquam quis veritatis.
+                            </p>
+                            <form>
+                                <div class="form-row form-message">
+                                    <div class="col-md-4 mb-3">
+                                        <label class="label-mesage" for="validationDefaultName">Name</label>
+                                        <input type="text" class="form-input_main" id="validationDefaultName" placeholder="Name" value required>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="label-mesage" for="validationDefaultWebsite">Website</label>
+                                        <input type="url" class="form-input_main" id="validationDefaultWebsite" placeholder="Website" value required>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="label-mesage" for="validationDefaultEmail">Email Adress</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-input_main" id="validationDefaultEmail" placeholder="Email Adress" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <label class="label-mesage" for="FormControlTextarea">Example textarea</label>
+                                    <textarea class="form-input_main form-input_main-text" id="FormControlTextarea" placeholder="Message" rows="4" required></textarea>
+                                </div>
+                                <label>&nbsp;</label>
+                                <button type="submit" class="button button-secondary button_borders">Send Message</button>
+                            </form>
+                        </div>
+                    <!-- Send us a message -->
+                <!-- //Main content -->
+ 
+                <footer>
+                    <div class="footer-top">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <a href="#">
+                                        <img src="img/logo-footer.png">
+                                    </a>
+                                    <div class="copyright">
+                                        © 2019 <span>BestWebSoft</span> All Rights Reserved
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="footer-menu clearfix">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Cars</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li class="active"><a href="#">Blog</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="contacts.html">Contacts</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div class="slide-menu-wrapper">
+                <div class="slide-menu__logo">
+                    <a href="/"><img src="img/logo-text.png"></a>
+                </div>
+                <div class="slide-menu-scroll" id="scroll" data-simplebar>
+                    <ul class="slide-menu">
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Cars</span>
+                                <span class="slide-menu__badge">2</span>
+                                <i class="slide-menu__arrow fa fa-plus"></i>
+                            </a>
+                            <ul class="slide-menu slide-menu_level2">
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Rent</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Dropoff</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Most popular</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Features</span>
+                                <i class="slide-menu__arrow fa fa-plus"></i>
+                            </a>
+                            <ul class="slide-menu slide-menu_level2">
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Rent</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Dropoff</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slide-menu__link">
+                                        <i class="slide-menu__icon fa fa-home"></i>
+                                        <span class="slide-menu__text">Most popular</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Pricing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">About us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contacts.html" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Contacts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Help</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">User profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">Shortcodes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="slide-menu__link">
+                                <i class="slide-menu__icon fa fa-home"></i>
+                                <span class="slide-menu__text">404</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <aside class="side-wrapper">
+                <div class="side-logo">
+                    <a href="/"><img src="img/logo.png"></a>
+                </div>
+                <ul class="side-menu">
+                    <li class="side-menu__item">
+                        <a href=".slide-menu-wrapper" data-toggle="showmenu" class="side-menu__link" ><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li class="side-menu__item">
+                        <a href="#" class="side-menu__link"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
